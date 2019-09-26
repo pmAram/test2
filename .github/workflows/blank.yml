@@ -12,13 +12,13 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
     - name: Release
-      - uses: meeDamian/github-release@0.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag: v1.3.6
-          name: My Creative Name
-          body: >
-            This release actually changes the fabric of the reality, so be careful 
-          gzip: folders
-          files: >
-            Dockerfile
+    - uses: meeDamian/github-release@0.1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: v1.3.6
+        name: My Creative Name
+        body: >
+          This release actually changes the fabric of the reality, so be careful 
+        gzip: folders
+        files: >
+          Dockerfile
