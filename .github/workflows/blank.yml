@@ -12,6 +12,6 @@ jobs:
     - uses: meeDamian/github-release@0.1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        tag: v1.3.6
+        tag: versioning
         name: My Creative Name
         body: > 11
