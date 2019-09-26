@@ -17,7 +17,9 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!; zip -r -X archive.zip test
     - name: Release
-      uses: ncipollo/release-action@v1
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
       with:
-        artifacts: "archive.zip"
-        token: ${{ secrets.GITHUB_TOKEN }}
+        files: archive.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
