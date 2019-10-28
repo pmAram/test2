@@ -26,3 +26,5 @@ jobs:
         -Dsonar.sources=. \
         -Dsonar.host.url=https://sonarcloud.io \
         -Dsonar.login=94e40e620b18c3280485be40c0fda97ca061c556
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
