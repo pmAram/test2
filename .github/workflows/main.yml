@@ -18,4 +18,4 @@ jobs:
         -Dsonar.organization=getenvironmentvariable \
         -Dsonar.sources=. \
         -Dsonar.host.url=https://sonarcloud.io \
-        -Dsonar.login=81c877e2340bbd7aa8da2ae5a7b2ef2815ca80dd
+        -Dsonar.login=94e40e620b18c3280485be40c0fda97ca061c556
