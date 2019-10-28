@@ -1,0 +1,21 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        sonar-scanner \
+        -Dsonar.projectKey=pmAram_test2 \
+        -Dsonar.organization=getenvironmentvariable \
+        -Dsonar.sources=. \
+        -Dsonar.host.url=https://sonarcloud.io \
+        -Dsonar.login=81c877e2340bbd7aa8da2ae5a7b2ef2815ca80dd
