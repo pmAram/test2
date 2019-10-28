@@ -18,8 +18,9 @@ jobs:
         unzip sonar-scanner-cli-4.0.0.1744-linux.zip
         ls
         cd sonar-scanner-4.0.0.1744-linux
+        cd bin
         ls
-        sonar-scanner \
+        ./sonar-scanner \
         -Dsonar.projectKey=pmAram_test2 \
         -Dsonar.organization=getenvironmentvariable \
         -Dsonar.sources=. \
