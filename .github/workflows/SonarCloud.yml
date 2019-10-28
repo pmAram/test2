@@ -1,4 +1,4 @@
-on: watch
+on: push
 name: Main Workflow
 jobs:
   sonarCloudTrigger:
@@ -10,4 +10,4 @@ jobs:
       uses: sonarsource/sonarcloud-github-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: "getenvironmentvariable"
+        SONAR_TOKEN: "94e40e620b18c3280485be40c0fda97ca061c556"
